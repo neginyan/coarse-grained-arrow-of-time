@@ -1,0 +1,84 @@
+==============================================================================
+Step 1  Linear flows: Theorem 3, Corollaries 4-5 (Sec. III)
+==============================================================================
+[PASS] (A,B) dS_C/dt = 1/2 Tr(G F), G = Cdot - BC - CB^T (non-Gaussian state, 3 oscillators, anisotropic C(t))
+         max relative deviation numeric vs formula = 5.3e-09
+[PASS] (C) sufficiency: at sigma_dot/sigma just above threshold, dS/dt >= 0 for 25 random mixtures
+         min dS/dt = 1.72e-01
+[PASS] (C) sharpness: 10% below threshold the state narrow along the negative eigenvector of G has dS/dt < 0
+         dS/dt = -0.0453 (formula -0.0453); lambda_min(G) = -0.025
+[PASS] (D) w = 0.0: threshold sigma_dot/sigma = lambda_max(B+B^T)/2 = |1 - w^2|/2
+         0.500000 vs 0.500000  (free particle: sigma_dot >= sigma/2, necessary and sufficient)
+[PASS] (D) w = 0.6: threshold sigma_dot/sigma = lambda_max(B+B^T)/2 = |1 - w^2|/2
+         0.320000 vs 0.320000
+[PASS] (D) w = 1.7: threshold sigma_dot/sigma = lambda_max(B+B^T)/2 = |1 - w^2|/2
+         0.945000 vs 0.945000
+[PASS] (E) matched (w = 1), fixed sigma: dS/dt = 0 for a non-Gaussian state at all times (no arrow, no decrease)
+         dS/dt = 2.2e-12, 0.0e+00, 0.0e+00
+[PASS] (E) unmatched (w^2 = 2.5), fixed sigma: coarse-grained entropy rises AND falls (oscillates)
+         max step 1.731e-02, min step -2.057e-02
+[PASS] (n = 2) coupled oscillators, anisotropic C: dS/dt = 1/2 Tr(G F)
+         numeric 0.20192004, formula 0.20192004
+
+9/9 checks passed
+==============================================================================
+Step 2  Quartic oscillator and method validation (Sec. V B)
+==============================================================================
+[PASS] (a) quartic: fast_eval = time derivative of S_C along the exact flow
+         fast_eval -0.874076, time-stepped -0.874073
+[PASS] (b) pendulum: fast_eval = time derivative of S_C along the exact flow
+         fast_eval 0.590064, time-stepped 0.590064
+[PASS] (c) quartic, sigma = 0.05: R(q0 = 4) = 22.7 against local strain rate 23.5; follows the linearised flow
+         q0=1: R=1.051 (lin 0.961, strain 1.000), q0=2: R=5.377 (lin 5.286, strain 5.500), q0=3: R=12.585 (lin 12.495, strain 13.000), q0=4: R=22.677 (lin 22.587, strain 23.500)
+[PASS] (d) no finite rate suffices: for r = 1, 3, 10 a localised state has dS_C/dt < 0
+         r=1: q0=1, dS/dt=-0.052, r=3: q0=1.75, dS/dt=-1.035, r=10: q0=2.75, dS/dt=-0.518
+
+4/4 checks passed
+==============================================================================
+Step 3  Nonlinear bound, Corollary 7, Proposition 8 (Secs. IV, V A)
+==============================================================================
+[PASS] Theorem: Sigma >= -kappa (d - sigma^2 tr F) for 200 random Gaussian-mixture states (pendulum)
+         min margin = 1.18e-03
+[PASS] Corollary: at sigma_dot/sigma = kappa, every state with sigma^2 tr F >= d/2 has dS/dt >= 0
+         132 such states, min dS/dt = 5.462e-01
+[PASS] Tightness: narrow along the stretching direction at q = pi, sigma -> 0: Sigma -> -kappa (d - sigma^2 tr F)
+         Sigma = -0.9981, -kappa(d - x) = -0.9984, sigma^2 trF = 1.0016
+[PASS] ... and a state sharp in both directions gives Sigma ~ 0 (bound -kappa(d - 2) = 0 also tight)
+         Sigma = -4.41e-25, sigma^2 trF = 2.0000
+[PASS] Necessity (sigma -> 0): at sigma_dot/sigma = 0.9 < kappa a state at the hyperbolic point has dS/dt < 0
+         dS/dt = -0.0967
+[PASS] Conjecture evidence: Sigma >= -kappa sigma^2 tr F on all 200 random states
+         min margin = 2.001e-02
+
+6/6 checks passed
+==============================================================================
+Step 4  Small-resolution limit, Theorem 9 (Secs. IV, V A)
+==============================================================================
+[PASS] Gaussian at the hyperbolic point, tilted: [Sigma + kappa sigma^2 trF]/sigma^2 -> E[s^T(kappa I - Sym Df)s] > 0
+         sigma = 0.2, 0.1, 0.05, 0.025: 10.06848, 11.93736, 12.51925, 12.67376  -> limit 12.72612; error ~ sigma^1.98
+[PASS] two-component mixture: [Sigma + kappa sigma^2 trF]/sigma^2 -> E[s^T(kappa I - Sym Df)s] > 0
+         sigma = 0.2, 0.1, 0.05, 0.025: 6.74729, 8.71262, 9.40150, 9.59099  -> limit 9.65584; error ~ sigma^1.97
+
+2/2 checks passed
+==============================================================================
+Step 5  Adversarial search for Conjecture 1 (Sec. V A)
+==============================================================================
+[PASS] (a) every stored optimum satisfies Conjecture 1 (R <= 1)
+         21 optima, largest R = 0.9081
+[PASS] (b) largest R per sigma as quoted in Sec. V A
+         sigma=0.1: 0.9081, sigma=0.3: 0.7637, sigma=1: 0.5265
+[PASS] (c) every optimum satisfies Theorem 6, R <= (2 - x)/x
+         
+
+3/3 checks passed
+
+##############################################################################
+SUMMARY
+##############################################################################
+  OK     9/9   Step 1  Linear flows: Theorem 3, Corollaries 4-5 (Sec. III)
+  OK     4/4   Step 2  Quartic oscillator and method validation (Sec. V B)
+  OK     6/6   Step 3  Nonlinear bound, Corollary 7, Proposition 8 (Secs. IV, V A)
+  OK     2/2   Step 4  Small-resolution limit, Theorem 9 (Secs. IV, V A)
+  OK     3/3   Step 5  Adversarial search for Conjecture 1 (Sec. V A)
+
+  24/24 checks passed in 86 s
