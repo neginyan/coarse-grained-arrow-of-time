@@ -1,5 +1,7 @@
 # Sharp criterion for the coarse-grained arrow of time in Hamiltonian dynamics
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23135448.svg)](https://doi.org/10.5281/zenodo.23135448)
+
 Verification code for the manuscript
 
 > T. Namba, *Sharp criterion for the coarse-grained arrow of time in
@@ -102,6 +104,28 @@ verification/
   make_figures.py           Figs. 1-3
 figures/                    PDF figures of the paper
 results/                    verification output and stored search optima
+```
+
+## How to cite
+
+If you use this code, please cite the archived version:
+
+> T. Namba, *coarse-grained-arrow-of-time: verification code for "Sharp criterion
+> for the coarse-grained arrow of time in Hamiltonian dynamics"*, version v1.0.0,
+> Zenodo (2026), [doi:10.5281/zenodo.23135448](https://doi.org/10.5281/zenodo.23135448).
+
+```bibtex
+@software{namba2026arrowcode,
+  author    = {Namba, Taishi},
+  title     = {coarse-grained-arrow-of-time: verification code for
+               ``Sharp criterion for the coarse-grained arrow of time
+               in Hamiltonian dynamics''},
+  version   = {v1.0.0},
+  publisher = {Zenodo},
+  year      = {2026},
+  doi       = {10.5281/zenodo.23135448},
+  url       = {https://doi.org/10.5281/zenodo.23135448}
+}
 ```
 
 ## Acknowledgment
