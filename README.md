@@ -106,8 +106,8 @@ results/                    verification output and stored search optima
 
 ## Acknowledgment
 
-The analysis and code were developed with the assistance of an AI tool
-(Anthropic Claude). Every result stated above is checked by the scripts in this
+The analysis and code were developed with the assistance of AI tools
+(Google Gemini and Anthropic Claude). Every result stated above is checked by the scripts in this
 repository.
 
 ## License
