@@ -1,6 +1,6 @@
 # Sharp criterion for the coarse-grained arrow of time in Hamiltonian dynamics
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23135448.svg)](https://doi.org/10.5281/zenodo.23135448)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23135448.svg)](https://doi.org/10.5281/zenodo.23135448)[![Verification](https://github.com/neginyan/coarse-grained-arrow-of-time/actions/workflows/verify.yml/badge.svg)](https://github.com/neginyan/coarse-grained-arrow-of-time/actions/workflows/verify.yml)
 
 Verification code for the manuscript
 
