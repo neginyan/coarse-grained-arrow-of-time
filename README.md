@@ -5,7 +5,8 @@
 Verification code for the manuscript
 
 > T. Namba, *Sharp criterion for the coarse-grained arrow of time in
-> Hamiltonian dynamics* (2026), submitted to *Physical Review E*.
+> Hamiltonian dynamics*, preprint (2026), submitted to *Physical Review E*,
+> [doi:10.5281/zenodo.23135743](https://doi.org/10.5281/zenodo.23135743).
 
 Every analytical statement, number and figure of the paper is checked by the
 scripts in this repository.
@@ -108,7 +109,12 @@ results/                    verification output and stored search optima
 
 ## How to cite
 
-If you use this code, please cite the archived version:
+If you use this code, please cite the paper,
+
+> T. Namba, *Sharp criterion for the coarse-grained arrow of time in Hamiltonian
+> dynamics*, preprint (2026), [doi:10.5281/zenodo.23135743](https://doi.org/10.5281/zenodo.23135743),
+
+and the archived version of the code:
 
 > T. Namba, *coarse-grained-arrow-of-time: verification code for "Sharp criterion
 > for the coarse-grained arrow of time in Hamiltonian dynamics"*, version v1.0.0,
