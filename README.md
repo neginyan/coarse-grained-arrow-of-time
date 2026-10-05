@@ -152,7 +152,7 @@ and the archived version of the code:
 ## Acknowledgment
 
 The analysis and code were developed with the assistance of AI tools
-(Google Gemini, OpenAI ChatGPT (GPT-5.6 Luna) and Anthropic Claude). Every result stated above is checked by the scripts in this
+(Google Gemini, OpenAI ChatGPT and Anthropic Claude). Every result stated above is checked by the scripts in this
 repository.
 
 ## License
