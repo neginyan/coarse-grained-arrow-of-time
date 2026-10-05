@@ -1,6 +1,6 @@
 """Run every verification script; exit code 0 if all checks pass."""
 import io, sys, time, contextlib
-import step1_linear, step2_quartic, step3_nonlinear_bound, step4_small_sigma, step5_search
+import step1_linear, step2_quartic, step3_nonlinear_bound, step4_small_sigma, step5_search, step6_geometric
 
 STEPS = [
     (step1_linear, "Step 1  Linear flows: Theorem 3, Corollaries 4-5 (Sec. III)"),
@@ -8,6 +8,7 @@ STEPS = [
     (step3_nonlinear_bound, "Step 3  Nonlinear bound, Corollary 7, Proposition 8 (Secs. IV, V A)"),
     (step4_small_sigma, "Step 4  Small-resolution limit, Theorem 9 (Secs. IV, V A)"),
     (step5_search, "Step 5  Adversarial search for Conjecture 1 (Sec. V A)"),
+    (step6_geometric, "Step 6  Geometric picture and diffusion models (Appendix A)"),
 ]
 
 if __name__ == "__main__":
