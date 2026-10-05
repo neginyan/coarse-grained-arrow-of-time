@@ -5,7 +5,7 @@
 Verification code for the manuscript
 
 > T. Namba, *Sharp criterion for the coarse-grained arrow of time in
-> Hamiltonian dynamics*, preprint (2026), submitted to *Physical Review E*,
+> Hamiltonian dynamics*, preprint (2026),
 > [doi:10.5281/zenodo.23135743](https://doi.org/10.5281/zenodo.23135743).
 
 Every analytical statement, number and figure of the paper is checked by the
